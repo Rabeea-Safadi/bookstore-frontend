@@ -5,11 +5,11 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <ul className={styles.ul}>
-      <li className={styles.logo} onClick={() => navigate('/')}>
+    <ul className={styles.list}>
+      <li className={styles['list-item']} onClick={() => navigate('/')}>
         Bookstore
       </li>
-      <li className={styles.addbook} onClick={() => navigate('/add')}>
+      <li className={styles['list-item']} onClick={() => navigate('/add')}>
         Add New Book
       </li>
     </ul>

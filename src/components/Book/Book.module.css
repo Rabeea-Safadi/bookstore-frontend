@@ -1,0 +1,13 @@
+.cover-image {
+  border-color: transparent;
+  border-radius: 10px;
+
+  max-width: 250px;
+  height: 300px;
+}
+
+.cover-image:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0 1.2rem #8da9c4);
+  cursor: pointer;
+}

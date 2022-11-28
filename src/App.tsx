@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import AddPage from './pages/AddPage';
@@ -5,16 +6,20 @@ import BookPage from './pages/BookPage';
 import HomePage from './pages/HomePage';
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Navbar />
+  const queryClient = new QueryClient({});
 
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="/add" element={<AddPage />} />
-        <Route path="/book" element={<BookPage />} />
-      </Routes>
-    </BrowserRouter>
+  return (
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/add" element={<AddPage />} />
+          <Route path="/book" element={<BookPage />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 };
 

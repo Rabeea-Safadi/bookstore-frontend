@@ -4,14 +4,14 @@ import BookList from '../components/BookList/BookList';
 const FAKE_BOOKS: IBookProps[] = [
   {
     uuid: '321321321',
-    author: 'j.k rowlling',
+    author: 'j.k rowling',
     title: 'harry potter',
     price: 25,
     coverURL: 'https://media.harrypotterfanzone.com/deathly-hallows-us-childrens-edition.jpg',
   },
   {
     uuid: '4143',
-    author: 'j.k rowlling',
+    author: 'j.k rowling',
     title: 'harry potter 2',
     price: 25,
     coverURL:
@@ -19,10 +19,11 @@ const FAKE_BOOKS: IBookProps[] = [
   },
   {
     uuid: '54121',
-    author: 'j.k rowlling',
+    author: 'j.k rowling',
     title: 'harry potter 3',
     price: 25,
-    coverURL: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2F9781408855652-png.jpg',
+    coverURL:
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2F9781408855652-png.jpg',
   },
 ];
 

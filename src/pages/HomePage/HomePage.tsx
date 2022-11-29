@@ -1,5 +1,5 @@
-import { IBookProps } from '../components/Book/Book';
-import BookList from '../components/BookList/BookList';
+import { IBookProps } from '../../components/Book/Book';
+import BookList from '../../components/BookList/BookList';
 
 const FAKE_BOOKS: IBookProps[] = [
   {

@@ -12,7 +12,9 @@
 .book {
   background-color: #134074;
   color: #eef4ed;
+
   border: 2px solid;
+  border-radius: 15px;
 
   font-weight: 500;
 

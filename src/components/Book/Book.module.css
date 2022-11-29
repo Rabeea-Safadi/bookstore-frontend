@@ -2,8 +2,8 @@
   border-color: transparent;
   border-radius: 10px;
 
-  max-width: 250px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
 }
 
 .cover-image:hover {

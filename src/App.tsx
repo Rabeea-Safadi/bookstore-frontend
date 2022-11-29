@@ -1,6 +1,9 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { IBookProps } from './components/Book/Book';
+import apiConfig from './api.config';
+import axios from 'axios';
 import Navbar from './components/Navbar/Navbar';
 import AddPage from './pages/AddPage/AddPage';
 import BookPage from './pages/BookPage/BookPage';
@@ -34,6 +37,12 @@ const FAKE_BOOKS: IBookProps[] = [
 
 const App = () => {
   const queryClient = new QueryClient({});
+  const [books, setBooks] = useState<IBookProps[]>([]);
+
+  useQuery(['books'], async () => {
+    const data = await axios.get(apiConfig.API_URI).then((res) => res.data);
+    setBooks(data);
+  });
 
   function addBook(book: IBookProps): void {
     FAKE_BOOKS.push(book);

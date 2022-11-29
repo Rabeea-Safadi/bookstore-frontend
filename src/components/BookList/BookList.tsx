@@ -10,7 +10,7 @@ const BookList: FC<IBookListProps> = ({ books }) => {
   return (
     <ul className={styles['book-list']}>
       {books.map((book) => (
-        <Book {...book} key={book.uuid} />
+        <Book {...book} key={book._id} />
       ))}
     </ul>
   );

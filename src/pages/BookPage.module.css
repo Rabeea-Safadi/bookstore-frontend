@@ -1,0 +1,56 @@
+.book {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.book-info {
+  display: flex;
+  flex-flow: column nowrap;
+
+  gap: 1rem;
+}
+
+.book-image {
+  max-width: max-content;
+  max-height: 60vh;
+
+  border-radius: 15px;
+}
+
+.book-title {
+  text-transform: capitalize;
+}
+
+.book-title::before {
+  content: 'Title: ';
+}
+
+.book-author {
+  text-transform: capitalize;
+}
+
+.book-author::before {
+  content: 'By: ';
+}
+
+.book-uuid {
+  color: #8da9c4;
+}
+
+.book-uuid::before {
+  content: 'Unique Id: ';
+}
+
+.book-price::before {
+  content: 'Price: ';
+}
+
+.book-price::after {
+  content: '$';
+}

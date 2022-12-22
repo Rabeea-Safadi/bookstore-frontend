@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 src/api.config.ts
+development_design.excalidraw
 
 # Editor directories and files
 .vscode/*
